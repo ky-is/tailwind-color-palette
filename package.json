@@ -1,0 +1,21 @@
+{
+	"name": "@ky-is/tailwind-color-palette",
+	"version": "1.0.0",
+	"description": "Personalized color palettes for Tailwindcss.",
+	"author": "Kyle Coburn",
+	"license": "ISC",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ky-is/tailwind-color-palette.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ky-is/tailwind-color-palette/issues"
+	},
+	"homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@ky-is/eslint-config": "^1.0.0",
+		"eslint": "^5.4.0"
+	}
+}
