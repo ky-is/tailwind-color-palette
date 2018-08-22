@@ -1,10 +1,10 @@
-const tailwindColorPalette = require('./index.js')
-
-const { describe, expect, it } = global //TODO https://github.com/facebook/jest/issues/4473
+import tailwindColorPalette from '../dist';
 
 describe('parameters', () => {
 	it('requires a valid color', () => {
+		// @ts-ignore
 		expect(() => tailwindColorPalette()).toThrow('"color"')
+		// @ts-ignore
 		expect(() => tailwindColorPalette(1)).toThrow('"color"')
 		expect(() => tailwindColorPalette('')).toThrow('"color"')
 		expect(() => tailwindColorPalette('1')).toThrow('unknown color')

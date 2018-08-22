@@ -1,11 +1,14 @@
 {
 	"name": "@ky-is/tailwind-color-palette",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"description": "Personalized color palettes for Tailwindcss.",
 	"author": "Kyle Coburn",
 	"license": "ISC",
-	"main": "index.js",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
+		"build": "rimraf dist && tsc",
+		"prepare": "rimraf dist && tsc && sed -i '' -e $'s/    /\t/g' $(find dist -type f) && jest",
 		"test": "jest"
 	},
 	"repository": {
@@ -16,12 +19,27 @@
 		"url": "https://github.com/ky-is/tailwind-color-palette/issues"
 	},
 	"homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
+	"eslintIgnore": [
+		"dist"
+	],
+	"files": [
+		"dist",
+		"types"
+	],
 	"dependencies": {
+		"@types/chroma-js": "^1.3.5",
 		"chroma-js": "^1.3.7"
 	},
 	"devDependencies": {
-		"@ky-is/eslint-config": "^1.0.0",
+		"@ky-is/eslint-config": "^1.1.0",
+		"@types/jest": "^23.3.1",
 		"eslint": "^5.4.0",
-		"jest": "^23.5.0"
+		"eslint-plugin-typescript": "^0.12.0",
+		"jest": "^23.5.0",
+		"rimraf": "^2.6.2",
+		"ts-jest": "^23.1.4",
+		"tslint": "^5.11.0",
+		"typescript": "^3.0.1",
+		"typescript-eslint-parser": "^18.0.0"
 	}
 }

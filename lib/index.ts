@@ -1,23 +1,25 @@
-const chroma = require('chroma-js')
+import chroma, { Color } from 'chroma-js'
 
-module.exports = (color, options = {}) => {
+import { PaletteOptions } from '../types'
+
+export = function (color: string, options: PaletteOptions = {}) {
 	if (!color || typeof color !== 'string') {
 		throw new Error('Please provide a valid "color" string parameter')
 	}
 	const colorChroma = chroma(color)
 	const { name = 'brand', ui = false, uiMix = 0.2, greyscale = false, greyscaleMix = 0.01, palette = {} } = options
 
-	function mix (baseColor, amount) {
+	function mix (baseColor: Color | string, amount: number): string {
 		return chroma.mix(baseColor, colorChroma, amount, 'lab').hex()
 	}
 
-	function addToPalette (name, value) {
+	function addToPalette (name: string, value: string) {
 		if (!palette[name]) {
 			palette[name] = value
 		}
 	}
 
-	function addScaleToPalette (name, baseColor, suffixes, padding) {
+	function addScaleToPalette (name: string, baseColor: Color | string, suffixes: string[], padding: number) {
 		const colorScale = chroma.scale([ 'black', baseColor, 'white' ]).padding(padding).colors(suffixes.length)
 		suffixes.forEach((suffix, index) => addToPalette(`${name}${suffix}`, colorScale[index]))
 	}
