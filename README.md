@@ -2,23 +2,27 @@
 
 Personalized color palettes for Tailwindcss. Generates the 6 standard light/dark classes for your color, plus optional UI and greyscale colors (based on https://github.com/adevade/color-scheme-generator).
 
-## Install
-
 ```bash
 npm install --save-dev @ky-is/tailwind-color-palette
 ```
+## Config
 
 In your tailwind js configuration file:
 
 ```js
 const tailwindColorPalette = require('@ky-is/tailwind-color-palette')
 
-const colors = tailwindColorPalette('#e7a', {greyscale: true})
+const colors = tailwindColorPalette('#e7a', {greyscale: true, ui: true})
 
 module.exports = {
   colors: colors,
 // ...
 ```
+
+This generates the following colors, tinted by the provided color:
+- Brand: `brand-darkest`, `brand-darker`, `brand-dark`, `brand`, `brand-light`, `brand-lighter`, `brand-lightest`
+- Greyscale: `grey-darkest`, `grey-darker`, `grey-dark`, `grey`, `grey-light`, `grey-lighter`, `grey-lightest`
+- UI: `cta-dark`, `cta`, `cta-light`, `info-dark`, `info`, `info-light`, `warning-dark`, `warning`, `warning-light`, `success-dark`, `success`, `success-light`, `danger-dark`, `danger`, `danger-light`
 
 ## Options
 
