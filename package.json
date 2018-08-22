@@ -13,7 +13,9 @@
 		"url": "https://github.com/ky-is/tailwind-color-palette/issues"
 	},
 	"homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
-	"dependencies": {},
+	"dependencies": {
+		"chroma-js": "^1.3.7"
+	},
 	"devDependencies": {
 		"@ky-is/eslint-config": "^1.0.0",
 		"eslint": "^5.4.0"
