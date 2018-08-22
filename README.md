@@ -24,15 +24,15 @@ module.exports = {
 
 The first parameter is the `color` to generate the palette from. The second is an optional object with the following options, none of which are required.
 
-- `name` (String, default: 'brand'): The class name prefix for this color (e.g. `text-brand-light` for the default)
-- `ui` (Boolean, default: false): Whether to generate UI color classes (`cta`, `info`, `warning`, `success`, `danger`)
-- `greyscale` (Boolean, default: false): Whether to generate greyscale color classes
+- `name` (String, default: 'brand'): The class name prefix for this color (e.g. `text-brand-light` for the default).
+- `ui` (Boolean, default: false): Whether to generate UI color classes (`cta`, `info`, `warning`, `success`, `danger`), tinted with `color`.
+- `greyscale` (Boolean, default: false): Whether to generate greyscale color classes, tinted with `color`.
 
 ### Advanced Options
 
-- `uiMix` (Number, default: 0.2, range: 0-1): The ratio of the `color` parameter to mix into the UI colors
-- `greyscaleMix` (Number, default: 0.01, range: 0-1): The ratio of the `color` parameter to mix into the grey colors
-- `palette` (Object, default: {}): An object of existing color definitions to be added to
+- `uiMix` (Number, default: 0.2, range: 0-1): The ratio of the `color` parameter to mix into the UI colors.
+- `greyscaleMix` (Number, default: 0.01, range: 0-1): The ratio of the `color` parameter to mix into the grey colors.
+- `palette` (Object, default: {}): An object of existing color definitions to be added to.
 
 ## Examples
 
