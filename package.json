@@ -5,6 +5,9 @@
 	"author": "Kyle Coburn",
 	"license": "ISC",
 	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ky-is/tailwind-color-palette.git"
@@ -18,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@ky-is/eslint-config": "^1.0.0",
-		"eslint": "^5.4.0"
+		"eslint": "^5.4.0",
+		"jest": "^23.5.0"
 	}
 }
