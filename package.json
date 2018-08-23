@@ -19,6 +19,9 @@
 		"url": "https://github.com/ky-is/tailwind-color-palette/issues"
 	},
 	"homepage": "https://github.com/ky-is/tailwind-color-palette#readme",
+	"eslintConfig": {
+		"extends": "@ky-is/eslint-config/typescript"
+	},
 	"eslintIgnore": [
 		"dist"
 	],
