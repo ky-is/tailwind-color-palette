@@ -9,7 +9,7 @@
 		"esModuleInterop": true,
 		"removeComments": true,
 	},
-	"exclude": [
-		"tests",
+	"include": [
+		"lib",
 	],
 }

@@ -1,4 +1,4 @@
-import tailwindColorPalette from '../dist';
+import tailwindColorPalette from '../dist'
 
 describe('parameters', () => {
 	it('requires a valid color', () => {

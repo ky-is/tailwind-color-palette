@@ -23,7 +23,8 @@
 		"extends": "@ky-is/eslint-config/typescript"
 	},
 	"eslintIgnore": [
-		"dist"
+		"dist",
+		"node_modules*"
 	],
 	"files": [
 		"dist",
