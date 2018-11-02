@@ -1,6 +1,6 @@
 {
 	"name": "@ky-is/tailwind-color-palette",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Personalized color palettes for Tailwindcss.",
 	"author": "Kyle Coburn",
 	"license": "ISC",
