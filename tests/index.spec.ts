@@ -7,8 +7,8 @@ describe('parameters', () => {
 		// @ts-ignore
 		expect(() => tailwindColorPalette(1)).toThrow('"color"')
 		expect(() => tailwindColorPalette('')).toThrow('"color"')
-		expect(() => tailwindColorPalette('1')).toThrow('unknown color')
-		expect(() => tailwindColorPalette('reed')).toThrow('unknown color')
+		expect(() => tailwindColorPalette('1')).toThrow('unknown format:')
+		expect(() => tailwindColorPalette('reed')).toThrow('unknown hex')
 	})
 	it('does not require options', () => {
 		expect(() => tailwindColorPalette('#000')).not.toThrow()

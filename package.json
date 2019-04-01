@@ -31,19 +31,19 @@
 		"types"
 	],
 	"dependencies": {
-		"@types/chroma-js": "^1.4.0",
-		"chroma-js": "^1.4.0"
+		"@types/chroma-js": "^1.4.1",
+		"chroma-js": "^2.0.3"
 	},
 	"devDependencies": {
-		"@ky-is/eslint-config": "^1.5.1",
-		"@types/jest": "^23.3.9",
-		"eslint": "^5.8.0",
-		"eslint-plugin-typescript": "^0.13.0",
-		"jest": "^23.6.0",
-		"rimraf": "^2.6.2",
-		"ts-jest": "^23.10.4",
-		"tslint": "^5.11.0",
-		"typescript": "^3.1.6",
-		"typescript-eslint-parser": "^20.0.0"
+		"@ky-is/eslint-config": "^1.6.4",
+		"@types/jest": "^24.0.11",
+		"eslint": "^5.16.0",
+		"eslint-plugin-typescript": "^0.14.0",
+		"jest": "^24.5.0",
+		"rimraf": "^2.6.3",
+		"ts-jest": "^24.0.1",
+		"tslint": "^5.14.0",
+		"typescript": "^3.4.1",
+		"typescript-eslint-parser": "^22.0.0"
 	}
 }
