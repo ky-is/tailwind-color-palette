@@ -4,7 +4,7 @@ Personalized color palettes for Tailwindcss. Generates the nine `100`–`900` cl
 
 For Tailwind 1.0:
 ```bash
-npm install --save-dev @ky-is/tailwind-color-palette@next
+npm install --save-dev @ky-is/tailwind-color-palette
 ```
 
 For Tailwind 0.x, see the [0.x branch](https://github.com/ky-is/tailwind-color-palette/tree/tailwind-0.x).
