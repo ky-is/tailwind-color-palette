@@ -1,5 +1,5 @@
 export interface ColorPalette {
-  [key: string]: any
+	[key: string]: any
 }
 
 export interface PaletteOptions {
@@ -9,9 +9,9 @@ export interface PaletteOptions {
 	grayscale?: boolean
 	grayscaleMix?: number
 	palette?: ColorPalette
-  colorscale?: Array<string|number>
+	colorscale?: Array<string|number>
 }
 
 export interface ColorRange {
-  [key: string]: string
-} 
+	[key: string]: string
+}
