@@ -7,8 +7,8 @@ export = function (color: string, options: PaletteOptions = {}) {
 		throw new Error('Please provide a valid "color" string parameter')
 	}
 	const colorChroma = chroma(color)
-	const colorScale: Array<number|string> = [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ]
-	const { name = 'brand', ui = false, uiMix = 0.2, grayscale = false, grayscaleMix = 0.03, palette = {}, colorscale = colorScale } = options
+	const defaultColorscale = [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ]
+	const { name = 'brand', ui = false, uiMix = 0.2, grayscale = false, grayscaleMix = 0.03, palette = {}, colorscale = defaultColorscale } = options
 
 	function mix (baseColor: Color | string, amount: number): string {
 		return chroma.mix(baseColor, colorChroma, amount, 'lab').hex()
