@@ -20,7 +20,7 @@ export = function (color: string, options: PaletteOptions = {}) {
 		}
 	}
 
-	function scalePalette (baseColor: Color | string, suffixes: Array<string|number>, padding: number = 0.1): ColorRange {
+	function scalePalette (baseColor: Color | string, suffixes: Array<string | number>, padding: number = 0.1): ColorRange {
 		const colorscale = chroma.scale([ 'white', baseColor, 'black' ]).padding(padding).colors(suffixes.length)
 		const colorRange: ColorRange = {}
 		suffixes.forEach((suffix, index) => colorRange[suffix] = colorscale[index])
