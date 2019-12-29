@@ -29,15 +29,16 @@ This generates the following colors, tinted by the provided color:
 
 The first parameter is the `color` to generate the palette from. The second is an optional object with:
 
-- `name` (String, default: 'brand'): The class name prefix for this color (e.g. `text-brand-light` for the default).
-- `ui` (Boolean, default: false): Whether to generate UI color classes (`cta`, `info`, `warning`, `success`, `danger`), tinted with `color`.
-- `grayscale` (Boolean, default: false): Whether to generate grayscale color classes, tinted with `color`.
+- `name` (string, default: `'brand'`): The class name prefix for this color (e.g. `text-brand-light` for the default).
+- `ui` (boolean, default: `false`): Whether to generate UI color classes (`cta`, `info`, `warning`, `success`, `danger`), tinted with `color`.
+- `grayscale` (boolean, default: `false`): Whether to generate grayscale color classes, tinted with `color`.
+- `colorscale` (Array<string | number>, default: `[100, 200, 300, 400, 500, 600, 700, 800, 900]`): The suffixes for your color names.
 
 ### Advanced Options
 
-- `uiMix` (Number, default: 0.2, range: 0-1): The proportion of the `color` parameter to mix into the UI colors.
-- `grayscaleMix` (Number, default: 0.03, range: 0-1): The proportion of the `color` parameter to mix into the gray colors.
-- `palette` (Object, default: {}): An object of existing color definitions to be appended to.
+- `uiMix` (number, default: `0.2`, range: 0–1): The proportion of the `color` parameter to mix into the UI colors.
+- `grayscaleMix` (number, default: `0.03`, range: 0–1): The proportion of the `color` parameter to mix into the gray colors.
+- `palette` ({[key: string]: string | ColorRange}, default: `{}`): An object of existing color definitions to be appended to.
 
 ## Examples
 
